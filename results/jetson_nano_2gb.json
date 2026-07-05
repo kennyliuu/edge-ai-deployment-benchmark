@@ -9,17 +9,32 @@
   "models": [
     {
       "model": "mnist_fp32.tflite",
-      "model_size_kb": 2617.4,
+      "model_size_kb": 883.4,
       "input_shape": [
         1,
         28,
         28
       ],
-      "input_dtype": "<class 'numpy.float32'>",
-      "latency_avg_ms": 0.664,
-      "latency_min_ms": 0.634,
-      "latency_max_ms": 0.721,
-      "latency_p95_ms": 0.704,
+      "input_dtype": "<float32>",
+      "latency_avg_ms": 0.832,
+      "latency_min_ms": 0.807,
+      "latency_max_ms": 0.898,
+      "latency_p95_ms": 0.869,
+      "runs": 100
+    },
+    {
+      "model": "mnist_int8.tflite",
+      "model_size_kb": 227.9,
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "input_dtype": "<uint8>",
+      "latency_avg_ms": 0.687,
+      "latency_min_ms": 0.681,
+      "latency_max_ms": 0.724,
+      "latency_p95_ms": 0.702,
       "runs": 100
     }
   ]

@@ -6,9 +6,12 @@ Built for demonstrating **model → runtime → on-device inference** skills rel
 
 ## Results (Jetson Nano 2GB)
 
-| Model | Size | Input | Latency (avg) | Latency (p95) |
-|---|---|---|---|---|
-| `mnist_fp32.tflite` | 2.6 MB | `[1, 28, 28]` float32 | **0.66 ms** | 0.70 ms |
+| Model | Size | Input | Accuracy | Latency (avg) | Latency (p95) |
+|---|---|---|---|---|---|
+| `mnist_fp32.tflite` | 883 KB | float32 `[1,28,28]` | 98.84% | **0.83 ms** | 0.87 ms |
+| `mnist_int8.tflite` | 228 KB | uint8 `[1,28,28]` | 98.87% | **0.69 ms** | 0.70 ms |
+
+**INT8 vs FP32:** 74% smaller model, ~17% lower latency, no accuracy loss on MNIST test set.
 
 **Device:** Jetson Nano, L4T R32.7.6, Ubuntu 18.04, Python 3.6, TensorFlow 2.7 (`tf.lite.Interpreter`)
 
@@ -50,7 +53,7 @@ python3.6 scripts/benchmark.py --output results/jetson_nano_2gb.json
 python3 scripts/train_and_export.py
 ```
 
-Exports `models/mnist_fp32.tflite` and `models/mnist_int8.tflite` (if supported).
+Exports `models/mnist_fp32.tflite` and `models/mnist_int8.tflite`, then evaluates test accuracy.
 
 ## Project structure
 
