@@ -81,16 +81,3 @@ python3 scripts/train_and_export.py
 ```
 
 Exports `models/mnist_fp32.tflite` and `models/mnist_int8.tflite`, then evaluates test accuracy.
-
-## Project structure
-
-```
-├── models/                  # TFLite models
-├── results/                 # Benchmark JSON reports
-├── scripts/
-│   ├── benchmark.py         # Latency & size benchmark
-│   ├── soak_test.py         # Long-running stability soak test
-│   ├── train_and_export.py  # Train MNIST CNN → TFLite (optional)
-│   └── run_jetson.sh        # One-command benchmark on Jetson
-└── labels_mnist.txt
-```
