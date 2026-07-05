@@ -64,6 +64,16 @@ Requires: `python3.6`, NVIDIA TensorFlow 2.7 wheel, `numpy`.
 python3.6 scripts/benchmark.py --output results/jetson_nano_2gb.json
 ```
 
+### Soak test (long-running stability)
+
+```bash
+# 5-minute soak, snapshot every 1000 inferences
+python3.6 scripts/soak_test.py --duration 300 --output results/soak_test.json
+
+# Quick smoke: 10k inferences
+python3.6 scripts/soak_test.py --max-runs 10000 --window 2000
+```
+
 ### Train & export (optional, run on PC with TensorFlow)
 
 ```bash
@@ -79,6 +89,7 @@ Exports `models/mnist_fp32.tflite` and `models/mnist_int8.tflite`, then evaluate
 ├── results/                 # Benchmark JSON reports
 ├── scripts/
 │   ├── benchmark.py         # Latency & size benchmark
+│   ├── soak_test.py         # Long-running stability soak test
 │   ├── train_and_export.py  # Train MNIST CNN → TFLite (optional)
 │   └── run_jetson.sh        # One-command benchmark on Jetson
 └── labels_mnist.txt

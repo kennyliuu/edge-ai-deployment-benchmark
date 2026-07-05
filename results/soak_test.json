@@ -1,0 +1,4420 @@
+{
+  "device": {
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "machine": "aarch64",
+    "python": "3.6.9",
+    "tensorflow": "2.7.0",
+    "jetson_l4t": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "soak": {
+    "model": "mnist_int8.tflite",
+    "model_size_kb": 227.9,
+    "config": {
+      "duration_sec": 300,
+      "max_runs": null,
+      "window": 1000,
+      "warmup": 10
+    },
+    "windows": [
+      {
+        "window": 0,
+        "inferences": 1000,
+        "elapsed_sec": 0.7,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.723
+      },
+      {
+        "window": 1,
+        "inferences": 2000,
+        "elapsed_sec": 1.4,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 2,
+        "inferences": 3000,
+        "elapsed_sec": 2.0,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 3,
+        "inferences": 4000,
+        "elapsed_sec": 2.7,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.709,
+        "latency_max_ms": 0.79
+      },
+      {
+        "window": 4,
+        "inferences": 5000,
+        "elapsed_sec": 3.4,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.755
+      },
+      {
+        "window": 5,
+        "inferences": 6000,
+        "elapsed_sec": 4.1,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 6,
+        "inferences": 7000,
+        "elapsed_sec": 4.8,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.75
+      },
+      {
+        "window": 7,
+        "inferences": 8000,
+        "elapsed_sec": 5.5,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.739
+      },
+      {
+        "window": 8,
+        "inferences": 9000,
+        "elapsed_sec": 6.2,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 9,
+        "inferences": 10000,
+        "elapsed_sec": 6.8,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.748
+      },
+      {
+        "window": 10,
+        "inferences": 11000,
+        "elapsed_sec": 7.5,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.746
+      },
+      {
+        "window": 11,
+        "inferences": 12000,
+        "elapsed_sec": 8.2,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 12,
+        "inferences": 13000,
+        "elapsed_sec": 8.9,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.75
+      },
+      {
+        "window": 13,
+        "inferences": 14000,
+        "elapsed_sec": 9.6,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 14,
+        "inferences": 15000,
+        "elapsed_sec": 10.3,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.991
+      },
+      {
+        "window": 15,
+        "inferences": 16000,
+        "elapsed_sec": 10.9,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 16,
+        "inferences": 17000,
+        "elapsed_sec": 11.6,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.739
+      },
+      {
+        "window": 17,
+        "inferences": 18000,
+        "elapsed_sec": 12.3,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.996
+      },
+      {
+        "window": 18,
+        "inferences": 19000,
+        "elapsed_sec": 13.0,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 19,
+        "inferences": 20000,
+        "elapsed_sec": 13.7,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.798
+      },
+      {
+        "window": 20,
+        "inferences": 21000,
+        "elapsed_sec": 14.4,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 21,
+        "inferences": 22000,
+        "elapsed_sec": 15.0,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.764
+      },
+      {
+        "window": 22,
+        "inferences": 23000,
+        "elapsed_sec": 15.7,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.748
+      },
+      {
+        "window": 23,
+        "inferences": 24000,
+        "elapsed_sec": 16.4,
+        "mem_available_mb": 808.0,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 24,
+        "inferences": 25000,
+        "elapsed_sec": 17.1,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.7,
+        "latency_max_ms": 0.879
+      },
+      {
+        "window": 25,
+        "inferences": 26000,
+        "elapsed_sec": 17.8,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 26,
+        "inferences": 27000,
+        "elapsed_sec": 18.5,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 27,
+        "inferences": 28000,
+        "elapsed_sec": 19.2,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 28,
+        "inferences": 29000,
+        "elapsed_sec": 19.8,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.756
+      },
+      {
+        "window": 29,
+        "inferences": 30000,
+        "elapsed_sec": 20.5,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 1.0
+      },
+      {
+        "window": 30,
+        "inferences": 31000,
+        "elapsed_sec": 21.2,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 43.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.841
+      },
+      {
+        "window": 31,
+        "inferences": 32000,
+        "elapsed_sec": 21.9,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 32,
+        "inferences": 33000,
+        "elapsed_sec": 22.6,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 33,
+        "inferences": 34000,
+        "elapsed_sec": 23.3,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.805
+      },
+      {
+        "window": 34,
+        "inferences": 35000,
+        "elapsed_sec": 24.0,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 35,
+        "inferences": 36000,
+        "elapsed_sec": 24.6,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 36,
+        "inferences": 37000,
+        "elapsed_sec": 25.3,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.758
+      },
+      {
+        "window": 37,
+        "inferences": 38000,
+        "elapsed_sec": 26.0,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.99
+      },
+      {
+        "window": 38,
+        "inferences": 39000,
+        "elapsed_sec": 26.7,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 39,
+        "inferences": 40000,
+        "elapsed_sec": 27.4,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 40,
+        "inferences": 41000,
+        "elapsed_sec": 28.1,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 41,
+        "inferences": 42000,
+        "elapsed_sec": 28.7,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.788
+      },
+      {
+        "window": 42,
+        "inferences": 43000,
+        "elapsed_sec": 29.4,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 43,
+        "inferences": 44000,
+        "elapsed_sec": 30.1,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 44,
+        "inferences": 45000,
+        "elapsed_sec": 30.8,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.788
+      },
+      {
+        "window": 45,
+        "inferences": 46000,
+        "elapsed_sec": 31.5,
+        "mem_available_mb": 808.1,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 46,
+        "inferences": 47000,
+        "elapsed_sec": 32.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 1.062
+      },
+      {
+        "window": 47,
+        "inferences": 48000,
+        "elapsed_sec": 32.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.715,
+        "latency_max_ms": 0.903
+      },
+      {
+        "window": 48,
+        "inferences": 49000,
+        "elapsed_sec": 33.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.754
+      },
+      {
+        "window": 49,
+        "inferences": 50000,
+        "elapsed_sec": 34.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 50,
+        "inferences": 51000,
+        "elapsed_sec": 34.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.807
+      },
+      {
+        "window": 51,
+        "inferences": 52000,
+        "elapsed_sec": 35.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 52,
+        "inferences": 53000,
+        "elapsed_sec": 36.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 53,
+        "inferences": 54000,
+        "elapsed_sec": 37.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.79
+      },
+      {
+        "window": 54,
+        "inferences": 55000,
+        "elapsed_sec": 37.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.794
+      },
+      {
+        "window": 55,
+        "inferences": 56000,
+        "elapsed_sec": 38.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 56,
+        "inferences": 57000,
+        "elapsed_sec": 39.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.7,
+        "latency_max_ms": 0.969
+      },
+      {
+        "window": 57,
+        "inferences": 58000,
+        "elapsed_sec": 39.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 58,
+        "inferences": 59000,
+        "elapsed_sec": 40.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.995
+      },
+      {
+        "window": 59,
+        "inferences": 60000,
+        "elapsed_sec": 41.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.825
+      },
+      {
+        "window": 60,
+        "inferences": 61000,
+        "elapsed_sec": 41.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.746
+      },
+      {
+        "window": 61,
+        "inferences": 62000,
+        "elapsed_sec": 42.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.992
+      },
+      {
+        "window": 62,
+        "inferences": 63000,
+        "elapsed_sec": 43.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.719,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 63,
+        "inferences": 64000,
+        "elapsed_sec": 43.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.825
+      },
+      {
+        "window": 64,
+        "inferences": 65000,
+        "elapsed_sec": 44.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 65,
+        "inferences": 66000,
+        "elapsed_sec": 45.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.796
+      },
+      {
+        "window": 66,
+        "inferences": 67000,
+        "elapsed_sec": 45.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 67,
+        "inferences": 68000,
+        "elapsed_sec": 46.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 68,
+        "inferences": 69000,
+        "elapsed_sec": 47.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.818
+      },
+      {
+        "window": 69,
+        "inferences": 70000,
+        "elapsed_sec": 47.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 70,
+        "inferences": 71000,
+        "elapsed_sec": 48.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 71,
+        "inferences": 72000,
+        "elapsed_sec": 49.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.805
+      },
+      {
+        "window": 72,
+        "inferences": 73000,
+        "elapsed_sec": 50.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.8
+      },
+      {
+        "window": 73,
+        "inferences": 74000,
+        "elapsed_sec": 50.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 74,
+        "inferences": 75000,
+        "elapsed_sec": 51.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 75,
+        "inferences": 76000,
+        "elapsed_sec": 52.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.801
+      },
+      {
+        "window": 76,
+        "inferences": 77000,
+        "elapsed_sec": 52.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.994
+      },
+      {
+        "window": 77,
+        "inferences": 78000,
+        "elapsed_sec": 53.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 78,
+        "inferences": 79000,
+        "elapsed_sec": 54.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 79,
+        "inferences": 80000,
+        "elapsed_sec": 54.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 80,
+        "inferences": 81000,
+        "elapsed_sec": 55.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.817
+      },
+      {
+        "window": 81,
+        "inferences": 82000,
+        "elapsed_sec": 56.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 82,
+        "inferences": 83000,
+        "elapsed_sec": 56.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 1.051
+      },
+      {
+        "window": 83,
+        "inferences": 84000,
+        "elapsed_sec": 57.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 84,
+        "inferences": 85000,
+        "elapsed_sec": 58.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 85,
+        "inferences": 86000,
+        "elapsed_sec": 58.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 86,
+        "inferences": 87000,
+        "elapsed_sec": 59.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.807
+      },
+      {
+        "window": 87,
+        "inferences": 88000,
+        "elapsed_sec": 60.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 88,
+        "inferences": 89000,
+        "elapsed_sec": 60.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.785
+      },
+      {
+        "window": 89,
+        "inferences": 90000,
+        "elapsed_sec": 61.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.787
+      },
+      {
+        "window": 90,
+        "inferences": 91000,
+        "elapsed_sec": 62.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 91,
+        "inferences": 92000,
+        "elapsed_sec": 63.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.707,
+        "latency_max_ms": 0.772
+      },
+      {
+        "window": 92,
+        "inferences": 93000,
+        "elapsed_sec": 63.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.788
+      },
+      {
+        "window": 93,
+        "inferences": 94000,
+        "elapsed_sec": 64.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 94,
+        "inferences": 95000,
+        "elapsed_sec": 65.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.746
+      },
+      {
+        "window": 95,
+        "inferences": 96000,
+        "elapsed_sec": 65.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 96,
+        "inferences": 97000,
+        "elapsed_sec": 66.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 97,
+        "inferences": 98000,
+        "elapsed_sec": 67.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 98,
+        "inferences": 99000,
+        "elapsed_sec": 67.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.839
+      },
+      {
+        "window": 99,
+        "inferences": 100000,
+        "elapsed_sec": 68.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 44.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.99
+      },
+      {
+        "window": 100,
+        "inferences": 101000,
+        "elapsed_sec": 69.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.924
+      },
+      {
+        "window": 101,
+        "inferences": 102000,
+        "elapsed_sec": 69.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.832
+      },
+      {
+        "window": 102,
+        "inferences": 103000,
+        "elapsed_sec": 70.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 103,
+        "inferences": 104000,
+        "elapsed_sec": 71.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 104,
+        "inferences": 105000,
+        "elapsed_sec": 71.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.801
+      },
+      {
+        "window": 105,
+        "inferences": 106000,
+        "elapsed_sec": 72.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 106,
+        "inferences": 107000,
+        "elapsed_sec": 73.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.686,
+        "latency_p95_ms": 0.708,
+        "latency_max_ms": 0.88
+      },
+      {
+        "window": 107,
+        "inferences": 108000,
+        "elapsed_sec": 73.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.798
+      },
+      {
+        "window": 108,
+        "inferences": 109000,
+        "elapsed_sec": 74.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.994
+      },
+      {
+        "window": 109,
+        "inferences": 110000,
+        "elapsed_sec": 75.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.818
+      },
+      {
+        "window": 110,
+        "inferences": 111000,
+        "elapsed_sec": 76.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.797
+      },
+      {
+        "window": 111,
+        "inferences": 112000,
+        "elapsed_sec": 76.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.99
+      },
+      {
+        "window": 112,
+        "inferences": 113000,
+        "elapsed_sec": 77.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.81
+      },
+      {
+        "window": 113,
+        "inferences": 114000,
+        "elapsed_sec": 78.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.834
+      },
+      {
+        "window": 114,
+        "inferences": 115000,
+        "elapsed_sec": 78.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 115,
+        "inferences": 116000,
+        "elapsed_sec": 79.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 116,
+        "inferences": 117000,
+        "elapsed_sec": 80.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 117,
+        "inferences": 118000,
+        "elapsed_sec": 80.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 118,
+        "inferences": 119000,
+        "elapsed_sec": 81.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 119,
+        "inferences": 120000,
+        "elapsed_sec": 82.1,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.749
+      },
+      {
+        "window": 120,
+        "inferences": 121000,
+        "elapsed_sec": 82.8,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 121,
+        "inferences": 122000,
+        "elapsed_sec": 83.5,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.795
+      },
+      {
+        "window": 122,
+        "inferences": 123000,
+        "elapsed_sec": 84.2,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.786
+      },
+      {
+        "window": 123,
+        "inferences": 124000,
+        "elapsed_sec": 84.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 124,
+        "inferences": 125000,
+        "elapsed_sec": 85.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 125,
+        "inferences": 126000,
+        "elapsed_sec": 86.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.819
+      },
+      {
+        "window": 126,
+        "inferences": 127000,
+        "elapsed_sec": 86.9,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 127,
+        "inferences": 128000,
+        "elapsed_sec": 87.6,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.818
+      },
+      {
+        "window": 128,
+        "inferences": 129000,
+        "elapsed_sec": 88.3,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 129,
+        "inferences": 130000,
+        "elapsed_sec": 89.0,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 130,
+        "inferences": 131000,
+        "elapsed_sec": 89.7,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.817
+      },
+      {
+        "window": 131,
+        "inferences": 132000,
+        "elapsed_sec": 90.4,
+        "mem_available_mb": 809.9,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.832
+      },
+      {
+        "window": 132,
+        "inferences": 133000,
+        "elapsed_sec": 91.0,
+        "mem_available_mb": 809.8,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 133,
+        "inferences": 134000,
+        "elapsed_sec": 91.7,
+        "mem_available_mb": 809.8,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 134,
+        "inferences": 135000,
+        "elapsed_sec": 92.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 1.169
+      },
+      {
+        "window": 135,
+        "inferences": 136000,
+        "elapsed_sec": 93.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.709,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 136,
+        "inferences": 137000,
+        "elapsed_sec": 93.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.81
+      },
+      {
+        "window": 137,
+        "inferences": 138000,
+        "elapsed_sec": 94.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 138,
+        "inferences": 139000,
+        "elapsed_sec": 95.2,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.81
+      },
+      {
+        "window": 139,
+        "inferences": 140000,
+        "elapsed_sec": 95.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 140,
+        "inferences": 141000,
+        "elapsed_sec": 96.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 141,
+        "inferences": 142000,
+        "elapsed_sec": 97.2,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.819
+      },
+      {
+        "window": 142,
+        "inferences": 143000,
+        "elapsed_sec": 97.9,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 143,
+        "inferences": 144000,
+        "elapsed_sec": 98.6,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.992
+      },
+      {
+        "window": 144,
+        "inferences": 145000,
+        "elapsed_sec": 99.3,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.81
+      },
+      {
+        "window": 145,
+        "inferences": 146000,
+        "elapsed_sec": 99.9,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.825
+      },
+      {
+        "window": 146,
+        "inferences": 147000,
+        "elapsed_sec": 100.6,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 147,
+        "inferences": 148000,
+        "elapsed_sec": 101.3,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.783
+      },
+      {
+        "window": 148,
+        "inferences": 149000,
+        "elapsed_sec": 102.0,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.816
+      },
+      {
+        "window": 149,
+        "inferences": 150000,
+        "elapsed_sec": 102.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 150,
+        "inferences": 151000,
+        "elapsed_sec": 103.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.706,
+        "latency_max_ms": 0.842
+      },
+      {
+        "window": 151,
+        "inferences": 152000,
+        "elapsed_sec": 104.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.75
+      },
+      {
+        "window": 152,
+        "inferences": 153000,
+        "elapsed_sec": 104.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 153,
+        "inferences": 154000,
+        "elapsed_sec": 105.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 154,
+        "inferences": 155000,
+        "elapsed_sec": 106.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.842
+      },
+      {
+        "window": 155,
+        "inferences": 156000,
+        "elapsed_sec": 106.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 156,
+        "inferences": 157000,
+        "elapsed_sec": 107.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.786
+      },
+      {
+        "window": 157,
+        "inferences": 158000,
+        "elapsed_sec": 108.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.823
+      },
+      {
+        "window": 158,
+        "inferences": 159000,
+        "elapsed_sec": 108.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 159,
+        "inferences": 160000,
+        "elapsed_sec": 109.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 160,
+        "inferences": 161000,
+        "elapsed_sec": 110.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.849
+      },
+      {
+        "window": 161,
+        "inferences": 162000,
+        "elapsed_sec": 110.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 162,
+        "inferences": 163000,
+        "elapsed_sec": 111.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 163,
+        "inferences": 164000,
+        "elapsed_sec": 112.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.813
+      },
+      {
+        "window": 164,
+        "inferences": 165000,
+        "elapsed_sec": 113.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 165,
+        "inferences": 166000,
+        "elapsed_sec": 113.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 166,
+        "inferences": 167000,
+        "elapsed_sec": 114.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.818
+      },
+      {
+        "window": 167,
+        "inferences": 168000,
+        "elapsed_sec": 115.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.992
+      },
+      {
+        "window": 168,
+        "inferences": 169000,
+        "elapsed_sec": 115.7,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 169,
+        "inferences": 170000,
+        "elapsed_sec": 116.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.804
+      },
+      {
+        "window": 170,
+        "inferences": 171000,
+        "elapsed_sec": 117.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 171,
+        "inferences": 172000,
+        "elapsed_sec": 117.7,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.786
+      },
+      {
+        "window": 172,
+        "inferences": 173000,
+        "elapsed_sec": 118.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.753
+      },
+      {
+        "window": 173,
+        "inferences": 174000,
+        "elapsed_sec": 119.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 174,
+        "inferences": 175000,
+        "elapsed_sec": 119.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.797
+      },
+      {
+        "window": 175,
+        "inferences": 176000,
+        "elapsed_sec": 120.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.809
+      },
+      {
+        "window": 176,
+        "inferences": 177000,
+        "elapsed_sec": 121.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 177,
+        "inferences": 178000,
+        "elapsed_sec": 121.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 178,
+        "inferences": 179000,
+        "elapsed_sec": 122.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 179,
+        "inferences": 180000,
+        "elapsed_sec": 123.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 180,
+        "inferences": 181000,
+        "elapsed_sec": 123.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 181,
+        "inferences": 182000,
+        "elapsed_sec": 124.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 182,
+        "inferences": 183000,
+        "elapsed_sec": 125.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 183,
+        "inferences": 184000,
+        "elapsed_sec": 126.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.787
+      },
+      {
+        "window": 184,
+        "inferences": 185000,
+        "elapsed_sec": 126.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 185,
+        "inferences": 186000,
+        "elapsed_sec": 127.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 186,
+        "inferences": 187000,
+        "elapsed_sec": 128.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.826
+      },
+      {
+        "window": 187,
+        "inferences": 188000,
+        "elapsed_sec": 128.7,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.752
+      },
+      {
+        "window": 188,
+        "inferences": 189000,
+        "elapsed_sec": 129.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 189,
+        "inferences": 190000,
+        "elapsed_sec": 130.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 190,
+        "inferences": 191000,
+        "elapsed_sec": 130.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 191,
+        "inferences": 192000,
+        "elapsed_sec": 131.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.808
+      },
+      {
+        "window": 192,
+        "inferences": 193000,
+        "elapsed_sec": 132.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.849
+      },
+      {
+        "window": 193,
+        "inferences": 194000,
+        "elapsed_sec": 132.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 194,
+        "inferences": 195000,
+        "elapsed_sec": 133.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.796
+      },
+      {
+        "window": 195,
+        "inferences": 196000,
+        "elapsed_sec": 134.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.841
+      },
+      {
+        "window": 196,
+        "inferences": 197000,
+        "elapsed_sec": 134.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 197,
+        "inferences": 198000,
+        "elapsed_sec": 135.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 198,
+        "inferences": 199000,
+        "elapsed_sec": 136.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 199,
+        "inferences": 200000,
+        "elapsed_sec": 136.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 200,
+        "inferences": 201000,
+        "elapsed_sec": 137.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 201,
+        "inferences": 202000,
+        "elapsed_sec": 138.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 202,
+        "inferences": 203000,
+        "elapsed_sec": 139.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 203,
+        "inferences": 204000,
+        "elapsed_sec": 139.7,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 204,
+        "inferences": 205000,
+        "elapsed_sec": 140.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 205,
+        "inferences": 206000,
+        "elapsed_sec": 141.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 206,
+        "inferences": 207000,
+        "elapsed_sec": 141.7,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 207,
+        "inferences": 208000,
+        "elapsed_sec": 142.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.784
+      },
+      {
+        "window": 208,
+        "inferences": 209000,
+        "elapsed_sec": 143.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.716,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 209,
+        "inferences": 210000,
+        "elapsed_sec": 143.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.785
+      },
+      {
+        "window": 210,
+        "inferences": 211000,
+        "elapsed_sec": 144.4,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.816
+      },
+      {
+        "window": 211,
+        "inferences": 212000,
+        "elapsed_sec": 145.1,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 212,
+        "inferences": 213000,
+        "elapsed_sec": 145.8,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.769
+      },
+      {
+        "window": 213,
+        "inferences": 214000,
+        "elapsed_sec": 146.5,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.739
+      },
+      {
+        "window": 214,
+        "inferences": 215000,
+        "elapsed_sec": 147.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 1.106
+      },
+      {
+        "window": 215,
+        "inferences": 216000,
+        "elapsed_sec": 147.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.804
+      },
+      {
+        "window": 216,
+        "inferences": 217000,
+        "elapsed_sec": 148.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 217,
+        "inferences": 218000,
+        "elapsed_sec": 149.2,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 1.018
+      },
+      {
+        "window": 218,
+        "inferences": 219000,
+        "elapsed_sec": 149.9,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 219,
+        "inferences": 220000,
+        "elapsed_sec": 150.6,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.739
+      },
+      {
+        "window": 220,
+        "inferences": 221000,
+        "elapsed_sec": 151.3,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 221,
+        "inferences": 222000,
+        "elapsed_sec": 152.0,
+        "mem_available_mb": 809.7,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.805
+      },
+      {
+        "window": 222,
+        "inferences": 223000,
+        "elapsed_sec": 152.7,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 1.153
+      },
+      {
+        "window": 223,
+        "inferences": 224000,
+        "elapsed_sec": 153.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.685,
+        "latency_p95_ms": 0.712,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 224,
+        "inferences": 225000,
+        "elapsed_sec": 154.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.798
+      },
+      {
+        "window": 225,
+        "inferences": 226000,
+        "elapsed_sec": 154.7,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.829
+      },
+      {
+        "window": 226,
+        "inferences": 227000,
+        "elapsed_sec": 155.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.998
+      },
+      {
+        "window": 227,
+        "inferences": 228000,
+        "elapsed_sec": 156.1,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 228,
+        "inferences": 229000,
+        "elapsed_sec": 156.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 229,
+        "inferences": 230000,
+        "elapsed_sec": 157.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.992
+      },
+      {
+        "window": 230,
+        "inferences": 231000,
+        "elapsed_sec": 158.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.771
+      },
+      {
+        "window": 231,
+        "inferences": 232000,
+        "elapsed_sec": 158.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.786
+      },
+      {
+        "window": 232,
+        "inferences": 233000,
+        "elapsed_sec": 159.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 233,
+        "inferences": 234000,
+        "elapsed_sec": 160.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 234,
+        "inferences": 235000,
+        "elapsed_sec": 160.9,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 235,
+        "inferences": 236000,
+        "elapsed_sec": 161.6,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.993
+      },
+      {
+        "window": 236,
+        "inferences": 237000,
+        "elapsed_sec": 162.3,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 237,
+        "inferences": 238000,
+        "elapsed_sec": 163.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 45.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 238,
+        "inferences": 239000,
+        "elapsed_sec": 163.6,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.996
+      },
+      {
+        "window": 239,
+        "inferences": 240000,
+        "elapsed_sec": 164.3,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.8
+      },
+      {
+        "window": 240,
+        "inferences": 241000,
+        "elapsed_sec": 165.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.991
+      },
+      {
+        "window": 241,
+        "inferences": 242000,
+        "elapsed_sec": 165.7,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.842
+      },
+      {
+        "window": 242,
+        "inferences": 243000,
+        "elapsed_sec": 166.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.807
+      },
+      {
+        "window": 243,
+        "inferences": 244000,
+        "elapsed_sec": 167.1,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 244,
+        "inferences": 245000,
+        "elapsed_sec": 167.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.802
+      },
+      {
+        "window": 245,
+        "inferences": 246000,
+        "elapsed_sec": 168.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.803
+      },
+      {
+        "window": 246,
+        "inferences": 247000,
+        "elapsed_sec": 169.1,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.997
+      },
+      {
+        "window": 247,
+        "inferences": 248000,
+        "elapsed_sec": 169.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 248,
+        "inferences": 249000,
+        "elapsed_sec": 170.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.825
+      },
+      {
+        "window": 249,
+        "inferences": 250000,
+        "elapsed_sec": 171.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 250,
+        "inferences": 251000,
+        "elapsed_sec": 171.9,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.79
+      },
+      {
+        "window": 251,
+        "inferences": 252000,
+        "elapsed_sec": 172.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.839
+      },
+      {
+        "window": 252,
+        "inferences": 253000,
+        "elapsed_sec": 173.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.709,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 253,
+        "inferences": 254000,
+        "elapsed_sec": 173.9,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.813
+      },
+      {
+        "window": 254,
+        "inferences": 255000,
+        "elapsed_sec": 174.6,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 255,
+        "inferences": 256000,
+        "elapsed_sec": 175.3,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 256,
+        "inferences": 257000,
+        "elapsed_sec": 176.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.795
+      },
+      {
+        "window": 257,
+        "inferences": 258000,
+        "elapsed_sec": 176.7,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 258,
+        "inferences": 259000,
+        "elapsed_sec": 177.3,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 259,
+        "inferences": 260000,
+        "elapsed_sec": 178.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.77
+      },
+      {
+        "window": 260,
+        "inferences": 261000,
+        "elapsed_sec": 178.7,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.844
+      },
+      {
+        "window": 261,
+        "inferences": 262000,
+        "elapsed_sec": 179.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 262,
+        "inferences": 263000,
+        "elapsed_sec": 180.1,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.769
+      },
+      {
+        "window": 263,
+        "inferences": 264000,
+        "elapsed_sec": 180.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 264,
+        "inferences": 265000,
+        "elapsed_sec": 181.4,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 265,
+        "inferences": 266000,
+        "elapsed_sec": 182.1,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.85
+      },
+      {
+        "window": 266,
+        "inferences": 267000,
+        "elapsed_sec": 182.8,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.819
+      },
+      {
+        "window": 267,
+        "inferences": 268000,
+        "elapsed_sec": 183.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 268,
+        "inferences": 269000,
+        "elapsed_sec": 184.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.83
+      },
+      {
+        "window": 269,
+        "inferences": 270000,
+        "elapsed_sec": 184.9,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.827
+      },
+      {
+        "window": 270,
+        "inferences": 271000,
+        "elapsed_sec": 185.5,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 271,
+        "inferences": 272000,
+        "elapsed_sec": 186.2,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 272,
+        "inferences": 273000,
+        "elapsed_sec": 186.9,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.811
+      },
+      {
+        "window": 273,
+        "inferences": 274000,
+        "elapsed_sec": 187.6,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 274,
+        "inferences": 275000,
+        "elapsed_sec": 188.3,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.749
+      },
+      {
+        "window": 275,
+        "inferences": 276000,
+        "elapsed_sec": 189.0,
+        "mem_available_mb": 809.5,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.793
+      },
+      {
+        "window": 276,
+        "inferences": 277000,
+        "elapsed_sec": 189.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 277,
+        "inferences": 278000,
+        "elapsed_sec": 190.3,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 278,
+        "inferences": 279000,
+        "elapsed_sec": 191.0,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.803
+      },
+      {
+        "window": 279,
+        "inferences": 280000,
+        "elapsed_sec": 191.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.997
+      },
+      {
+        "window": 280,
+        "inferences": 281000,
+        "elapsed_sec": 192.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 281,
+        "inferences": 282000,
+        "elapsed_sec": 193.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 282,
+        "inferences": 283000,
+        "elapsed_sec": 193.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 283,
+        "inferences": 284000,
+        "elapsed_sec": 194.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 284,
+        "inferences": 285000,
+        "elapsed_sec": 195.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 285,
+        "inferences": 286000,
+        "elapsed_sec": 195.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.99
+      },
+      {
+        "window": 286,
+        "inferences": 287000,
+        "elapsed_sec": 196.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.743
+      },
+      {
+        "window": 287,
+        "inferences": 288000,
+        "elapsed_sec": 197.2,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.815
+      },
+      {
+        "window": 288,
+        "inferences": 289000,
+        "elapsed_sec": 197.9,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 289,
+        "inferences": 290000,
+        "elapsed_sec": 198.6,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.832
+      },
+      {
+        "window": 290,
+        "inferences": 291000,
+        "elapsed_sec": 199.2,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.813
+      },
+      {
+        "window": 291,
+        "inferences": 292000,
+        "elapsed_sec": 199.9,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 292,
+        "inferences": 293000,
+        "elapsed_sec": 200.6,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.816
+      },
+      {
+        "window": 293,
+        "inferences": 294000,
+        "elapsed_sec": 201.3,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.761
+      },
+      {
+        "window": 294,
+        "inferences": 295000,
+        "elapsed_sec": 202.0,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.997
+      },
+      {
+        "window": 295,
+        "inferences": 296000,
+        "elapsed_sec": 202.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.779
+      },
+      {
+        "window": 296,
+        "inferences": 297000,
+        "elapsed_sec": 203.3,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.707,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 297,
+        "inferences": 298000,
+        "elapsed_sec": 204.0,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.746
+      },
+      {
+        "window": 298,
+        "inferences": 299000,
+        "elapsed_sec": 204.7,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.824
+      },
+      {
+        "window": 299,
+        "inferences": 300000,
+        "elapsed_sec": 205.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 300,
+        "inferences": 301000,
+        "elapsed_sec": 206.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 301,
+        "inferences": 302000,
+        "elapsed_sec": 206.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.817
+      },
+      {
+        "window": 302,
+        "inferences": 303000,
+        "elapsed_sec": 207.4,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 303,
+        "inferences": 304000,
+        "elapsed_sec": 208.1,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.7,
+        "latency_max_ms": 0.829
+      },
+      {
+        "window": 304,
+        "inferences": 305000,
+        "elapsed_sec": 208.8,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.813
+      },
+      {
+        "window": 305,
+        "inferences": 306000,
+        "elapsed_sec": 209.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 306,
+        "inferences": 307000,
+        "elapsed_sec": 210.2,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 307,
+        "inferences": 308000,
+        "elapsed_sec": 210.9,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.861
+      },
+      {
+        "window": 308,
+        "inferences": 309000,
+        "elapsed_sec": 211.5,
+        "mem_available_mb": 809.6,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 309,
+        "inferences": 310000,
+        "elapsed_sec": 212.2,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 1.02
+      },
+      {
+        "window": 310,
+        "inferences": 311000,
+        "elapsed_sec": 212.9,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.715,
+        "latency_max_ms": 0.896
+      },
+      {
+        "window": 311,
+        "inferences": 312000,
+        "elapsed_sec": 213.6,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 312,
+        "inferences": 313000,
+        "elapsed_sec": 214.3,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.814
+      },
+      {
+        "window": 313,
+        "inferences": 314000,
+        "elapsed_sec": 215.0,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 314,
+        "inferences": 315000,
+        "elapsed_sec": 215.7,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 315,
+        "inferences": 316000,
+        "elapsed_sec": 216.3,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.791
+      },
+      {
+        "window": 316,
+        "inferences": 317000,
+        "elapsed_sec": 217.0,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.816
+      },
+      {
+        "window": 317,
+        "inferences": 318000,
+        "elapsed_sec": 217.7,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 318,
+        "inferences": 319000,
+        "elapsed_sec": 218.4,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.802
+      },
+      {
+        "window": 319,
+        "inferences": 320000,
+        "elapsed_sec": 219.1,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.805
+      },
+      {
+        "window": 320,
+        "inferences": 321000,
+        "elapsed_sec": 219.8,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 321,
+        "inferences": 322000,
+        "elapsed_sec": 220.4,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.788
+      },
+      {
+        "window": 322,
+        "inferences": 323000,
+        "elapsed_sec": 221.1,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.83
+      },
+      {
+        "window": 323,
+        "inferences": 324000,
+        "elapsed_sec": 221.8,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.689,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 324,
+        "inferences": 325000,
+        "elapsed_sec": 222.5,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 325,
+        "inferences": 326000,
+        "elapsed_sec": 223.2,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 326,
+        "inferences": 327000,
+        "elapsed_sec": 223.9,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 327,
+        "inferences": 328000,
+        "elapsed_sec": 224.5,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.749
+      },
+      {
+        "window": 328,
+        "inferences": 329000,
+        "elapsed_sec": 225.2,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.857
+      },
+      {
+        "window": 329,
+        "inferences": 330000,
+        "elapsed_sec": 225.9,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 330,
+        "inferences": 331000,
+        "elapsed_sec": 226.6,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.857
+      },
+      {
+        "window": 331,
+        "inferences": 332000,
+        "elapsed_sec": 227.3,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.757
+      },
+      {
+        "window": 332,
+        "inferences": 333000,
+        "elapsed_sec": 228.0,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 333,
+        "inferences": 334000,
+        "elapsed_sec": 228.6,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.842
+      },
+      {
+        "window": 334,
+        "inferences": 335000,
+        "elapsed_sec": 229.3,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.755
+      },
+      {
+        "window": 335,
+        "inferences": 336000,
+        "elapsed_sec": 230.0,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 336,
+        "inferences": 337000,
+        "elapsed_sec": 230.7,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.787
+      },
+      {
+        "window": 337,
+        "inferences": 338000,
+        "elapsed_sec": 231.4,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 338,
+        "inferences": 339000,
+        "elapsed_sec": 232.1,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 339,
+        "inferences": 340000,
+        "elapsed_sec": 232.8,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.859
+      },
+      {
+        "window": 340,
+        "inferences": 341000,
+        "elapsed_sec": 233.4,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.768
+      },
+      {
+        "window": 341,
+        "inferences": 342000,
+        "elapsed_sec": 234.1,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 342,
+        "inferences": 343000,
+        "elapsed_sec": 234.8,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.796
+      },
+      {
+        "window": 343,
+        "inferences": 344000,
+        "elapsed_sec": 235.5,
+        "mem_available_mb": 809.4,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.778
+      },
+      {
+        "window": 344,
+        "inferences": 345000,
+        "elapsed_sec": 236.2,
+        "mem_available_mb": 808.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.719,
+        "latency_max_ms": 1.072
+      },
+      {
+        "window": 345,
+        "inferences": 346000,
+        "elapsed_sec": 236.9,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.797
+      },
+      {
+        "window": 346,
+        "inferences": 347000,
+        "elapsed_sec": 237.5,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.748
+      },
+      {
+        "window": 347,
+        "inferences": 348000,
+        "elapsed_sec": 238.2,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 348,
+        "inferences": 349000,
+        "elapsed_sec": 238.9,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 349,
+        "inferences": 350000,
+        "elapsed_sec": 239.6,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.778
+      },
+      {
+        "window": 350,
+        "inferences": 351000,
+        "elapsed_sec": 240.3,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 351,
+        "inferences": 352000,
+        "elapsed_sec": 241.0,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 352,
+        "inferences": 353000,
+        "elapsed_sec": 241.7,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 1.003
+      },
+      {
+        "window": 353,
+        "inferences": 354000,
+        "elapsed_sec": 242.3,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 354,
+        "inferences": 355000,
+        "elapsed_sec": 243.0,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 355,
+        "inferences": 356000,
+        "elapsed_sec": 243.7,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 356,
+        "inferences": 357000,
+        "elapsed_sec": 244.4,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 357,
+        "inferences": 358000,
+        "elapsed_sec": 245.1,
+        "mem_available_mb": 808.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 358,
+        "inferences": 359000,
+        "elapsed_sec": 245.8,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 359,
+        "inferences": 360000,
+        "elapsed_sec": 246.4,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.772
+      },
+      {
+        "window": 360,
+        "inferences": 361000,
+        "elapsed_sec": 247.1,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.748
+      },
+      {
+        "window": 361,
+        "inferences": 362000,
+        "elapsed_sec": 247.8,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 362,
+        "inferences": 363000,
+        "elapsed_sec": 248.5,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 363,
+        "inferences": 364000,
+        "elapsed_sec": 249.2,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 364,
+        "inferences": 365000,
+        "elapsed_sec": 249.9,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 365,
+        "inferences": 366000,
+        "elapsed_sec": 250.6,
+        "mem_available_mb": 809.3,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 366,
+        "inferences": 367000,
+        "elapsed_sec": 251.2,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 367,
+        "inferences": 368000,
+        "elapsed_sec": 251.9,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.685,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.991
+      },
+      {
+        "window": 368,
+        "inferences": 369000,
+        "elapsed_sec": 252.6,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 369,
+        "inferences": 370000,
+        "elapsed_sec": 253.3,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.713,
+        "latency_max_ms": 0.774
+      },
+      {
+        "window": 370,
+        "inferences": 371000,
+        "elapsed_sec": 254.0,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 371,
+        "inferences": 372000,
+        "elapsed_sec": 254.7,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.779
+      },
+      {
+        "window": 372,
+        "inferences": 373000,
+        "elapsed_sec": 255.4,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.785
+      },
+      {
+        "window": 373,
+        "inferences": 374000,
+        "elapsed_sec": 256.0,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 374,
+        "inferences": 375000,
+        "elapsed_sec": 256.7,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 375,
+        "inferences": 376000,
+        "elapsed_sec": 257.4,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.742
+      },
+      {
+        "window": 376,
+        "inferences": 377000,
+        "elapsed_sec": 258.1,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 377,
+        "inferences": 378000,
+        "elapsed_sec": 258.8,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.738
+      },
+      {
+        "window": 378,
+        "inferences": 379000,
+        "elapsed_sec": 259.5,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.741
+      },
+      {
+        "window": 379,
+        "inferences": 380000,
+        "elapsed_sec": 260.1,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 380,
+        "inferences": 381000,
+        "elapsed_sec": 260.8,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.739
+      },
+      {
+        "window": 381,
+        "inferences": 382000,
+        "elapsed_sec": 261.5,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 382,
+        "inferences": 383000,
+        "elapsed_sec": 262.2,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 383,
+        "inferences": 384000,
+        "elapsed_sec": 262.9,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.744
+      },
+      {
+        "window": 384,
+        "inferences": 385000,
+        "elapsed_sec": 263.6,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.79
+      },
+      {
+        "window": 385,
+        "inferences": 386000,
+        "elapsed_sec": 264.2,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 386,
+        "inferences": 387000,
+        "elapsed_sec": 264.9,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.738
+      },
+      {
+        "window": 387,
+        "inferences": 388000,
+        "elapsed_sec": 265.6,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.798
+      },
+      {
+        "window": 388,
+        "inferences": 389000,
+        "elapsed_sec": 266.3,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 389,
+        "inferences": 390000,
+        "elapsed_sec": 267.0,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.802
+      },
+      {
+        "window": 390,
+        "inferences": 391000,
+        "elapsed_sec": 267.7,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.806
+      },
+      {
+        "window": 391,
+        "inferences": 392000,
+        "elapsed_sec": 268.3,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.989
+      },
+      {
+        "window": 392,
+        "inferences": 393000,
+        "elapsed_sec": 269.0,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 393,
+        "inferences": 394000,
+        "elapsed_sec": 269.7,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.8
+      },
+      {
+        "window": 394,
+        "inferences": 395000,
+        "elapsed_sec": 270.4,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.994
+      },
+      {
+        "window": 395,
+        "inferences": 396000,
+        "elapsed_sec": 271.1,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.759
+      },
+      {
+        "window": 396,
+        "inferences": 397000,
+        "elapsed_sec": 271.8,
+        "mem_available_mb": 809.2,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.754
+      },
+      {
+        "window": 397,
+        "inferences": 398000,
+        "elapsed_sec": 272.4,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 1.079
+      },
+      {
+        "window": 398,
+        "inferences": 399000,
+        "elapsed_sec": 273.1,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.719,
+        "latency_max_ms": 0.93
+      },
+      {
+        "window": 399,
+        "inferences": 400000,
+        "elapsed_sec": 273.8,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.799
+      },
+      {
+        "window": 400,
+        "inferences": 401000,
+        "elapsed_sec": 274.5,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.994
+      },
+      {
+        "window": 401,
+        "inferences": 402000,
+        "elapsed_sec": 275.2,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.75
+      },
+      {
+        "window": 402,
+        "inferences": 403000,
+        "elapsed_sec": 275.9,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.795
+      },
+      {
+        "window": 403,
+        "inferences": 404000,
+        "elapsed_sec": 276.6,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.987
+      },
+      {
+        "window": 404,
+        "inferences": 405000,
+        "elapsed_sec": 277.2,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.684,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.771
+      },
+      {
+        "window": 405,
+        "inferences": 406000,
+        "elapsed_sec": 277.9,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 406,
+        "inferences": 407000,
+        "elapsed_sec": 278.6,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 407,
+        "inferences": 408000,
+        "elapsed_sec": 279.3,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.683,
+        "latency_p95_ms": 0.706,
+        "latency_max_ms": 0.967
+      },
+      {
+        "window": 408,
+        "inferences": 409000,
+        "elapsed_sec": 280.0,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.982
+      },
+      {
+        "window": 409,
+        "inferences": 410000,
+        "elapsed_sec": 280.7,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 410,
+        "inferences": 411000,
+        "elapsed_sec": 281.3,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 46.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.873
+      },
+      {
+        "window": 411,
+        "inferences": 412000,
+        "elapsed_sec": 282.0,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 412,
+        "inferences": 413000,
+        "elapsed_sec": 282.7,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.712,
+        "latency_max_ms": 0.796
+      },
+      {
+        "window": 413,
+        "inferences": 414000,
+        "elapsed_sec": 283.4,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.694,
+        "latency_max_ms": 0.789
+      },
+      {
+        "window": 414,
+        "inferences": 415000,
+        "elapsed_sec": 284.1,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 1.063
+      },
+      {
+        "window": 415,
+        "inferences": 416000,
+        "elapsed_sec": 284.8,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.747
+      },
+      {
+        "window": 416,
+        "inferences": 417000,
+        "elapsed_sec": 285.4,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.798
+      },
+      {
+        "window": 417,
+        "inferences": 418000,
+        "elapsed_sec": 286.1,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 418,
+        "inferences": 419000,
+        "elapsed_sec": 286.8,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.736
+      },
+      {
+        "window": 419,
+        "inferences": 420000,
+        "elapsed_sec": 287.5,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.792
+      },
+      {
+        "window": 420,
+        "inferences": 421000,
+        "elapsed_sec": 288.2,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.985
+      },
+      {
+        "window": 421,
+        "inferences": 422000,
+        "elapsed_sec": 288.9,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.736
+      },
+      {
+        "window": 422,
+        "inferences": 423000,
+        "elapsed_sec": 289.6,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.804
+      },
+      {
+        "window": 423,
+        "inferences": 424000,
+        "elapsed_sec": 290.2,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.681,
+        "latency_p95_ms": 0.697,
+        "latency_max_ms": 0.992
+      },
+      {
+        "window": 424,
+        "inferences": 425000,
+        "elapsed_sec": 290.9,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.74
+      },
+      {
+        "window": 425,
+        "inferences": 426000,
+        "elapsed_sec": 291.6,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.804
+      },
+      {
+        "window": 426,
+        "inferences": 427000,
+        "elapsed_sec": 292.3,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.983
+      },
+      {
+        "window": 427,
+        "inferences": 428000,
+        "elapsed_sec": 293.0,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.802
+      },
+      {
+        "window": 428,
+        "inferences": 429000,
+        "elapsed_sec": 293.7,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.699,
+        "latency_max_ms": 0.831
+      },
+      {
+        "window": 429,
+        "inferences": 430000,
+        "elapsed_sec": 294.3,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.984
+      },
+      {
+        "window": 430,
+        "inferences": 431000,
+        "elapsed_sec": 295.0,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.696,
+        "latency_max_ms": 0.745
+      },
+      {
+        "window": 431,
+        "inferences": 432000,
+        "elapsed_sec": 295.7,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.679,
+        "latency_p95_ms": 0.693,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 432,
+        "inferences": 433000,
+        "elapsed_sec": 296.4,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.988
+      },
+      {
+        "window": 433,
+        "inferences": 434000,
+        "elapsed_sec": 297.1,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.787
+      },
+      {
+        "window": 434,
+        "inferences": 435000,
+        "elapsed_sec": 297.8,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.68,
+        "latency_p95_ms": 0.695,
+        "latency_max_ms": 0.797
+      },
+      {
+        "window": 435,
+        "inferences": 436000,
+        "elapsed_sec": 298.4,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.691,
+        "latency_max_ms": 0.986
+      },
+      {
+        "window": 436,
+        "inferences": 437000,
+        "elapsed_sec": 299.1,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.0,
+        "latency_avg_ms": 0.677,
+        "latency_p95_ms": 0.69,
+        "latency_max_ms": 0.795
+      },
+      {
+        "window": 437,
+        "inferences": 438000,
+        "elapsed_sec": 299.8,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.682,
+        "latency_p95_ms": 0.698,
+        "latency_max_ms": 0.812
+      },
+      {
+        "window": 438,
+        "inferences": 438270,
+        "elapsed_sec": 300.0,
+        "mem_available_mb": 809.1,
+        "cpu_temp_c": 47.5,
+        "latency_avg_ms": 0.678,
+        "latency_p95_ms": 0.692,
+        "latency_max_ms": 0.794
+      }
+    ],
+    "summary": {
+      "total_inferences": 438270,
+      "elapsed_sec": 300.0,
+      "errors": 0,
+      "throughput_ips": 1460.9,
+      "latency_avg_ms_first_window": 0.678,
+      "latency_avg_ms_last_window": 0.678,
+      "latency_drift_pct": 0.0
+    }
+  }
+}
