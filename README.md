@@ -4,6 +4,25 @@ End-to-end edge inference benchmark on **Jetson Nano 2GB**: TensorFlow Lite mode
 
 Built for demonstrating **model → runtime → on-device inference** skills relevant to edge AI / SoC deployment roles.
 
+## Test Platform (Jetson Nano 2GB)
+
+Benchmarks in this repo were measured on an **NVIDIA Jetson Nano Developer Kit (2GB)**.
+
+| Component | Specification |
+|---|---|
+| **SoC** | NVIDIA Tegra X1 (T210) |
+| **CPU** | Quad-core ARM Cortex-A57 @ 1.43 GHz |
+| **GPU** | 128-core NVIDIA Maxwell |
+| **Memory** | 2 GB LPDDR4 (64-bit, 25.6 GB/s) |
+| **Storage** | microSD card |
+| **Connectivity** | Gigabit Ethernet |
+| **OS** | Ubuntu 18.04 (L4T) |
+| **JetPack / L4T** | JetPack 4.6.x · L4T R32.7.6 |
+| **Architecture** | aarch64 |
+| **Python / Runtime** | Python 3.6.9 · TensorFlow 2.7 (`tf.lite.Interpreter`) |
+
+> **Note:** Jetson Nano 2GB has no NPU; inference in this project runs on **CPU** via TensorFlow Lite. This still reflects realistic edge-Linux deployment constraints (memory, glibc, runtime compatibility).
+
 ## Results (Jetson Nano 2GB)
 
 | Model | Size | Input | Accuracy | Latency (avg) | Latency (p95) |
@@ -12,8 +31,6 @@ Built for demonstrating **model → runtime → on-device inference** skills rel
 | `mnist_int8.tflite` | 228 KB | uint8 `[1,28,28]` | 98.87% | **0.69 ms** | 0.70 ms |
 
 **INT8 vs FP32:** 74% smaller model, ~17% lower latency, no accuracy loss on MNIST test set.
-
-**Device:** Jetson Nano, L4T R32.7.6, Ubuntu 18.04, Python 3.6, TensorFlow 2.7 (`tf.lite.Interpreter`)
 
 Full report: [`results/jetson_nano_2gb.json`](results/jetson_nano_2gb.json)
 
