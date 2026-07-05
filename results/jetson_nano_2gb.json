@@ -1,0 +1,26 @@
+{
+  "device": {
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "machine": "aarch64",
+    "python": "3.6.9",
+    "tensorflow": "2.7.0",
+    "jetson_l4t": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "models": [
+    {
+      "model": "mnist_fp32.tflite",
+      "model_size_kb": 2617.4,
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "input_dtype": "<class 'numpy.float32'>",
+      "latency_avg_ms": 0.664,
+      "latency_min_ms": 0.634,
+      "latency_max_ms": 0.721,
+      "latency_p95_ms": 0.704,
+      "runs": 100
+    }
+  ]
+}
