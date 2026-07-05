@@ -94,7 +94,3 @@ Exports `models/mnist_fp32.tflite` and `models/mnist_int8.tflite`, then evaluate
 │   └── run_jetson.sh        # One-command benchmark on Jetson
 └── labels_mnist.txt
 ```
-
-## Author
-
-Kenny Liu — [GitHub](https://github.com/kennyliuu)
