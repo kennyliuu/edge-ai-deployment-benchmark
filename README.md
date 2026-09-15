@@ -1,8 +1,10 @@
-# Edge AI Deployment Benchmark
+# Edge AI System Performance & Stability Benchmark
 
 End-to-end edge inference benchmark on **Jetson Nano 2GB**: TensorFlow Lite model deployment, latency measurement, and deployment notes for resource-constrained Linux devices.
 
 Built for demonstrating **model → runtime → on-device inference** skills relevant to edge AI / SoC deployment roles.
+
+**Upgrade in progress:** extending from pure AI deployment metrics toward **IPC, CPU/memory profiling, long-running stability, and perf-driven debugging** — see [`docs/SYSTEM_PERF_STABILITY_PLAN.md`](docs/SYSTEM_PERF_STABILITY_PLAN.md).
 
 ## Test Platform (Jetson Nano 2GB)
 
