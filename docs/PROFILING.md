@@ -48,7 +48,7 @@ perf report
 busy-spin / `interpreter.invoke` path. Remove `--busy-spin-us` and compare IPC +
 inference CPU via `scripts/ipc_benchmark.py`.
 
-Interview line:
+Ｄescription:
 
 > I used `top` / `strace` / `perf` on an Edge AI inference service to separate IPC
 > overhead from TFLite invoke cost, and to catch an intentional busy-wait CPU
