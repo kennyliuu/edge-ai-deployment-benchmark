@@ -16,11 +16,17 @@
         28
       ],
       "input_dtype": "<float32>",
-      "latency_avg_ms": 0.832,
-      "latency_min_ms": 0.807,
-      "latency_max_ms": 0.898,
-      "latency_p95_ms": 0.869,
-      "runs": 100
+      "latency_avg_ms": 0.836,
+      "latency_min_ms": 0.811,
+      "latency_max_ms": 0.977,
+      "latency_p95_ms": 0.892,
+      "runs": 100,
+      "cpu_pct": 93.3,
+      "rss_mb": 302.6,
+      "rss_mb_before": 302.36,
+      "peak_rss_mb": 302.6,
+      "cpu_temp_c": 45.0,
+      "mem_available_mb": 776.5
     },
     {
       "model": "mnist_int8.tflite",
@@ -31,11 +37,17 @@
         28
       ],
       "input_dtype": "<uint8>",
-      "latency_avg_ms": 0.687,
-      "latency_min_ms": 0.681,
-      "latency_max_ms": 0.724,
-      "latency_p95_ms": 0.702,
-      "runs": 100
+      "latency_avg_ms": 0.713,
+      "latency_min_ms": 0.704,
+      "latency_max_ms": 0.95,
+      "latency_p95_ms": 0.728,
+      "runs": 100,
+      "cpu_pct": 95.7,
+      "rss_mb": 301.92,
+      "rss_mb_before": 301.92,
+      "peak_rss_mb": 302.6,
+      "cpu_temp_c": 45.0,
+      "mem_available_mb": 776.5
     }
   ]
 }

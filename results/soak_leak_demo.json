@@ -1,0 +1,103 @@
+{
+  "device": {
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "machine": "aarch64",
+    "python": "3.6.9",
+    "tensorflow": "2.7.0",
+    "jetson_l4t": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "soak": {
+    "model": "mnist_int8.tflite",
+    "model_size_kb": 227.9,
+    "config": {
+      "duration_sec": null,
+      "max_runs": 8000,
+      "window": 2000,
+      "warmup": 10,
+      "inject_leak_bytes": 8192
+    },
+    "windows": [
+      {
+        "window": 0,
+        "inferences": 2000,
+        "elapsed_sec": 1.4,
+        "rss_mb": 319.19,
+        "peak_rss_mb": 319.19,
+        "mem_available_mb": 772.2,
+        "cpu_temp_c": 44.5,
+        "cpu_pct": 99.7,
+        "latency_avg_ms": 0.686,
+        "latency_p95_ms": 0.701,
+        "latency_max_ms": 0.751
+      },
+      {
+        "window": 1,
+        "inferences": 4000,
+        "elapsed_sec": 2.8,
+        "rss_mb": 335.15,
+        "peak_rss_mb": 335.15,
+        "mem_available_mb": 756.4,
+        "cpu_temp_c": 44.5,
+        "cpu_pct": 98.8,
+        "latency_avg_ms": 0.686,
+        "latency_p95_ms": 0.701,
+        "latency_max_ms": 1.008
+      },
+      {
+        "window": 2,
+        "inferences": 6000,
+        "elapsed_sec": 4.2,
+        "rss_mb": 350.88,
+        "peak_rss_mb": 350.88,
+        "mem_available_mb": 740.3,
+        "cpu_temp_c": 44.5,
+        "cpu_pct": 100.2,
+        "latency_avg_ms": 0.686,
+        "latency_p95_ms": 0.702,
+        "latency_max_ms": 0.996
+      },
+      {
+        "window": 3,
+        "inferences": 8000,
+        "elapsed_sec": 5.6,
+        "rss_mb": 366.86,
+        "peak_rss_mb": 366.86,
+        "mem_available_mb": 724.6,
+        "cpu_temp_c": 44.5,
+        "cpu_pct": 99.6,
+        "latency_avg_ms": 0.685,
+        "latency_p95_ms": 0.701,
+        "latency_max_ms": 0.761
+      }
+    ],
+    "summary": {
+      "total_inferences": 8000,
+      "elapsed_sec": 5.6,
+      "errors": 0,
+      "throughput_ips": 1422.3,
+      "peak_rss_mb": 366.86,
+      "latency_avg_ms_first_window": 0.686,
+      "latency_avg_ms_last_window": 0.685,
+      "latency_drift_pct": -0.15,
+      "stability": {
+        "question": "Does memory usage continuously increase?",
+        "answer": "yes",
+        "memory_continuously_increasing": true,
+        "stable": false,
+        "rss_mb_first": 319.19,
+        "rss_mb_last": 366.86,
+        "rss_growth_mb": 47.67,
+        "rss_growth_per_hour_mb": null,
+        "latency_drift_pct": -0.15,
+        "temp_c_first": 44.5,
+        "temp_c_last": 44.5,
+        "temp_delta_c": 0.0,
+        "thresholds": {
+          "rss_growth_mb": 2.0,
+          "latency_drift_pct": 10.0
+        },
+        "reason": "RSS growth 47.67 MB over 5.6s; latency drift -0.15%"
+      }
+    }
+  }
+}

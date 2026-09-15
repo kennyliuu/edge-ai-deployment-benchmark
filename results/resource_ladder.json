@@ -1,0 +1,91 @@
+{
+  "device": {
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "machine": "aarch64",
+    "python": "3.6.9",
+    "tensorflow": "2.7.0",
+    "jetson_l4t": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "models": [
+    {
+      "model": "mnist_fp32.tflite",
+      "model_size_kb": 883.4,
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "input_dtype": "<float32>",
+      "latency_avg_ms": 0.85,
+      "latency_min_ms": 0.823,
+      "latency_max_ms": 0.959,
+      "latency_p95_ms": 0.897,
+      "runs": 50,
+      "cpu_pct": 81.5,
+      "rss_mb": 301.39,
+      "rss_mb_before": 300.62,
+      "peak_rss_mb": 301.39,
+      "cpu_temp_c": 45.0,
+      "mem_available_mb": 776.2
+    },
+    {
+      "model": "mnist_int8.tflite",
+      "model_size_kb": 227.9,
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "input_dtype": "<uint8>",
+      "latency_avg_ms": 0.696,
+      "latency_min_ms": 0.687,
+      "latency_max_ms": 0.742,
+      "latency_p95_ms": 0.722,
+      "runs": 50,
+      "cpu_pct": 110.0,
+      "rss_mb": 300.78,
+      "rss_mb_before": 300.78,
+      "peak_rss_mb": 301.39,
+      "cpu_temp_c": 45.0,
+      "mem_available_mb": 776.2
+    }
+  ],
+  "resource_ladder": {
+    "model": "mnist_int8.tflite",
+    "points": [
+      {
+        "runs": 100,
+        "latency_avg_ms": 0.688,
+        "latency_p95_ms": 0.706,
+        "cpu_pct": 99.5,
+        "rss_mb": 300.84,
+        "rss_mb_start": 300.84,
+        "peak_rss_mb": 301.39,
+        "cpu_temp_c": 45.0,
+        "throughput_ips": 1449.9
+      },
+      {
+        "runs": 1000,
+        "latency_avg_ms": 0.687,
+        "latency_p95_ms": 0.701,
+        "cpu_pct": 99.9,
+        "rss_mb": 300.84,
+        "rss_mb_start": 300.84,
+        "peak_rss_mb": 301.39,
+        "cpu_temp_c": 45.0,
+        "throughput_ips": 1451.4
+      },
+      {
+        "runs": 10000,
+        "latency_avg_ms": 0.686,
+        "latency_p95_ms": 0.699,
+        "cpu_pct": 99.6,
+        "rss_mb": 301.27,
+        "rss_mb_start": 300.84,
+        "peak_rss_mb": 301.39,
+        "cpu_temp_c": 45.0,
+        "throughput_ips": 1453.4
+      }
+    ]
+  }
+}

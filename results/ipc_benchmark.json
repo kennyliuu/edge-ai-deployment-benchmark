@@ -1,0 +1,72 @@
+{
+  "device": {
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "machine": "aarch64",
+    "python": "3.6.9",
+    "jetson_l4t": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "config": {
+    "payload_bytes": 784,
+    "iters": 1000,
+    "warmup": 50,
+    "transports": [
+      "unix_socket",
+      "shared_memory",
+      "pipe"
+    ]
+  },
+  "results": [
+    {
+      "latency_avg_ms": 0.0762,
+      "latency_p95_ms": 0.0942,
+      "latency_max_ms": 0.2782,
+      "latency_min_ms": 0.0613,
+      "transport": "unix_socket",
+      "iters": 1000,
+      "payload_bytes": 784,
+      "throughput_mps": 13131.8,
+      "throughput_mibs": 9.82,
+      "cpu_pct": 58.0,
+      "rss_mb": 31.36
+    },
+    {
+      "latency_avg_ms": 0.0499,
+      "latency_p95_ms": 0.0562,
+      "latency_max_ms": 0.1315,
+      "latency_min_ms": 0.035,
+      "transport": "shared_memory",
+      "iters": 1000,
+      "payload_bytes": 784,
+      "throughput_mps": 20029.2,
+      "throughput_mibs": 14.98,
+      "cpu_pct": 66.9,
+      "rss_mb": 31.36
+    },
+    {
+      "latency_avg_ms": 0.0472,
+      "latency_p95_ms": 0.0534,
+      "latency_max_ms": 0.2849,
+      "latency_min_ms": 0.0345,
+      "transport": "pipe",
+      "iters": 1000,
+      "payload_bytes": 784,
+      "throughput_mps": 21173.4,
+      "throughput_mibs": 15.83,
+      "cpu_pct": 71.2,
+      "rss_mb": 31.36
+    }
+  ],
+  "summary": {
+    "fastest": "pipe",
+    "latency_avg_ms_by_transport": {
+      "unix_socket": 0.0762,
+      "shared_memory": 0.0499,
+      "pipe": 0.0472
+    },
+    "throughput_mps_by_transport": {
+      "unix_socket": 13131.8,
+      "shared_memory": 20029.2,
+      "pipe": 21173.4
+    }
+  }
+}

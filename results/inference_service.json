@@ -1,0 +1,18 @@
+{
+  "mode": "sensor_simulator_to_inference_service",
+  "ipc": "unix_socket",
+  "model": "mnist_int8.tflite",
+  "result": {
+    "frames": 100,
+    "latency_avg_ms": 1.283,
+    "latency_p95_ms": 1.375,
+    "latency_max_ms": 1.587,
+    "throughput_fps": 779.4
+  },
+  "resources": {
+    "rss_mb": 297.7,
+    "peak_rss_mb": 297.7,
+    "mem_available_mb": 646.4,
+    "cpu_temp_c": 46.0
+  }
+}
