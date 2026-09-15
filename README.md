@@ -40,16 +40,18 @@ Profiling / intentional bugs: [`docs/PROFILING.md`](docs/PROFILING.md)
 
 Full report: [`results/jetson_nano_2gb.json`](results/jetson_nano_2gb.json)
 
-### Stability (existing soak)
+### Stability / soak (process RSS + verdict)
 
-| Run | Inferences | Errors | Latency drift | Notes |
-|---|---|---|---|---|
-| 5 min | 438,270 | 0 | 0.0% | [`soak_test.json`](results/soak_test.json) |
-| 30 min | 2,616,600 | 0 | −1.01% | [`soak_test_30min.json`](results/soak_test_30min.json) |
+**Verdict:** Does memory usage continuously increase? **No** — RSS stays flat under continuous INT8 inference; latency drift < 1%.
 
-New soak builds also track **process RSS / peak RSS / CPU%** and emit an explicit
-verdict: *Does memory usage continuously increase?*
+| Run | Inferences | Errors | RSS first→last | RSS growth | Latency drift | Temp | Report |
+|---|---|---|---|---|---|---|---|
+| 5 min (legacy) | 438,270 | 0 | (MemAvailable only) | — | 0.0% | — | [`soak_test.json`](results/soak_test.json) |
+| 30 min + RSS | 2,621,573 | 0 | 300.9 → 301.6 MB | **+0.67 MB** | −0.73% | 44→52°C | [`soak_test_30min_rss.json`](results/soak_test_30min_rss.json) |
+| 60 min + RSS | 5,252,641 | 0 | 301.3 → 303.1 MB | **+1.74 MB** | −0.15% | 52→53.5°C | [`soak_test_60min_rss.json`](results/soak_test_60min_rss.json) |
 
+Thresholds used by `soak_test.py`: RSS growth < 2 MB and |latency drift| < 10% ⇒ `stable: true`.
+Intentional leak demo (`--inject-leak-bytes`) flips the verdict to **yes** — see [`soak_leak_demo.json`](results/soak_leak_demo.json).
 ### IPC micro-benchmark (784 B payload, Jetson Nano)
 
 | Transport | Avg latency | Throughput |
@@ -85,9 +87,11 @@ python3.6 scripts/ipc_benchmark.py --output results/ipc_benchmark.json
 python3.6 scripts/benchmark.py --ladder 100,1000,10000,100000 \
   --output results/resource_ladder.json
 
-# 30–60 min soak with RSS growth verdict
+# 30 / 60 min soak with RSS growth verdict
 python3.6 scripts/soak_test.py --duration 1800 --window 5000 \
   --output results/soak_test_30min_rss.json
+python3.6 scripts/soak_test.py --duration 3600 --window 10000 \
+  --output results/soak_test_60min_rss.json
 
 # Sensor simulator → TFLite inference service (Unix socket)
 python3.6 scripts/inference_service.py --mode demo --frames 200
