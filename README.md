@@ -125,11 +125,11 @@ Jetson Nano / ARM64 Linux
 Compares Unix socket / shared memory / pipe. **No TFLite** — child process only echoes bytes back.
 
 ```text
-┌─────────────────┐         socket/shm/pipe         ┌─────────────────┐
-│  Parent（client）│  ─── 送 784 bytes ───────────► │  Child（server） │
-│                 │  ◄── 原樣 echo 回來 ─────────── │  只 read/write  │
-│  量 RTT、CPU    │                                  │  不跑 AI         │
-└─────────────────┘                                  └─────────────────┘
+┌───────────────────┐         socket/shm/pipe           ┌───────────────────┐
+│  Parent（client)  │  ─── send 784 bytes ───────────►  │ Child（server）    │
+│                   │  ◄──  echo baack ───────────      │  only read/write  │
+│  measure RTT、CPU │                                   │  不跑 AI           │
+└───────────────────┘                                   └───────────────────┘
 ```
 
 ### Sensor → inference service (`scripts/inference_service.py`)
@@ -137,11 +137,11 @@ Compares Unix socket / shared memory / pipe. **No TFLite** — child process onl
 Fake sensor client sends a frame over Unix socket; server runs TFLite and returns JSON.
 
 ```text
-┌──────────────────────┐    Unix socket    ┌──────────────────────────┐
-│ Client（假 sensor）   │ ── 784B frame ──► │ Server（TFLite service）  │
-│ random 像素當一幀     │ ◄── JSON 結果 ─── │ invoke + pred / RSS       │
-│ 量端到端 RTT         │                   │                           │
-└──────────────────────┘                   └──────────────────────────┘
+┌─────────────────────────┐    Unix socket       ┌──────────────────────────┐
+│ Client（fake sensor）   │ ── 784B frame ──►    │ Server（TFLite service）  │
+│ random pixel as a frame │ ◄── JSON results ─── │ invoke + pred / RSS       │
+│ measure end to end RTT  │                      │                           │
+└─────────────────────────┘                      └──────────────────────────┘
 ```
 
 ### Single-process inference (`scripts/benchmark.py` / `soak_test.py`)
