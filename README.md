@@ -5,7 +5,7 @@ inference, IPC (Unix socket / shared memory / pipe), CPU·RSS·thermal monitorin
 long-running soak tests with a memory-growth verdict, and a reproducible
 `perf` / `strace` / Valgrind debug loop.
 
-Interview narrative this repo supports:
+This repo supports:
 
 > Application → IPC → AI Runtime → System Resource → Performance → Stability
 
