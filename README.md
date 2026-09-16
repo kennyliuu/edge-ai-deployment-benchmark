@@ -120,6 +120,34 @@ Jetson Nano / ARM64 Linux
              └── Throughput
 ```
 
+### IPC micro-benchmark (`scripts/ipc_benchmark.py`)
+
+Compares Unix socket / shared memory / pipe. **No TFLite** — child process only echoes bytes back.
+
+```text
+┌─────────────────┐         socket/shm/pipe         ┌─────────────────┐
+│  Parent（client）│  ─── 送 784 bytes ───────────► │  Child（server） │
+│                 │  ◄── 原樣 echo 回來 ─────────── │  只 read/write  │
+│  量 RTT、CPU    │                                  │  不跑 AI         │
+└─────────────────┘                                  └─────────────────┘
+```
+
+### Sensor → inference service (`scripts/inference_service.py`)
+
+Fake sensor client sends a frame over Unix socket; server runs TFLite and returns JSON.
+
+```text
+┌──────────────────────┐    Unix socket    ┌──────────────────────────┐
+│ Client（假 sensor）   │ ── 784B frame ──► │ Server（TFLite service）  │
+│ random 像素當一幀     │ ◄── JSON 結果 ─── │ invoke + pred / RSS       │
+│ 量端到端 RTT         │                   │                           │
+└──────────────────────┘                   └──────────────────────────┘
+```
+
+### Single-process inference (`scripts/benchmark.py` / `soak_test.py`)
+
+No IPC — one process loops `interpreter.invoke()` and samples CPU / RSS / temperature.
+
 ## What this project demonstrates
 
 - TFLite deploy on embedded Linux (Jetson Nano) with real glibc/runtime trade-offs
