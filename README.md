@@ -128,7 +128,7 @@ Compares Unix socket / shared memory / pipe. **No TFLite** — child process onl
 ┌───────────────────┐         socket/shm/pipe           ┌───────────────────┐
 │  Parent（client)  │  ─── send 784 bytes ───────────►  │ Child（server）    │
 │                   │  ◄──  echo baack ───────────      │  only read/write  │
-│  measure RTT、CPU │                                   │  不跑 AI           │
+│  measure RTT、CPU │                                   │  no inference      │
 └───────────────────┘                                   └───────────────────┘
 ```
 
