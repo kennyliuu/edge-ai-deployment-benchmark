@@ -46,12 +46,12 @@ Full report: [`results/jetson_nano_2gb.json`](results/jetson_nano_2gb.json)
 
 | Run | Inferences | Errors | RSS first→last | RSS growth | Latency drift | Temp | Report |
 |---|---|---|---|---|---|---|---|
-| 5 min (legacy) | 438,270 | 0 | (MemAvailable only) | — | 0.0% | — | [`soak_test.json`](results/soak_test.json) |
-| 30 min + RSS | 2,621,573 | 0 | 300.9 → 301.6 MB | **+0.67 MB** | −0.73% | 44→52°C | [`soak_test_30min_rss.json`](results/soak_test_30min_rss.json) |
-| 60 min + RSS | 5,252,641 | 0 | 301.3 → 303.1 MB | **+1.74 MB** | −0.15% | 52→53.5°C | [`soak_test_60min_rss.json`](results/soak_test_60min_rss.json) |
+| 30 min | 2,621,573 | 0 | 300.9 → 301.6 MB | **+0.67 MB** | −0.73% | 44→52°C | [`soak_test_30min_rss.json`](results/soak_test_30min_rss.json) |
+| 60 min | 5,252,641 | 0 | 301.3 → 303.1 MB | **+1.74 MB** | −0.15% | 52→53.5°C | [`soak_test_60min_rss.json`](results/soak_test_60min_rss.json) |
 
 Thresholds used by `soak_test.py`: RSS growth < 2 MB and |latency drift| < 10% ⇒ `stable: true`.
 Intentional leak demo (`--inject-leak-bytes`) flips the verdict to **yes** — see [`soak_leak_demo.json`](results/soak_leak_demo.json).
+
 ### IPC micro-benchmark (784 B payload, Jetson Nano)
 
 | Transport | Avg latency | Throughput |
