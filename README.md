@@ -54,13 +54,14 @@ Intentional leak demo (`--inject-leak-bytes`) flips the verdict to **yes** — s
 
 ### IPC micro-benchmark (784 B payload, Jetson Nano)
 
-| Transport | Avg latency | Throughput |
-|---|---|---|
-| Unix socket | 0.076 ms | 13.1k msg/s |
-| Shared memory | 0.050 ms | 20.0k msg/s |
-| Pipe | **0.047 ms** | **21.2k msg/s** |
+| Transport | Avg latency | Throughput | CPU usage |
+|---|---|---|---|
+| Unix socket | 0.076 ms | 13.1k msg/s | 58.0% |
+| Shared memory | 0.050 ms | 20.0k msg/s | 66.9% |
+| Pipe | **0.047 ms** | **21.2k msg/s** | 71.2% |
 
 Shared memory is ~34% faster than Unix socket at MNIST frame size.
+CPU usage is the client-process estimate from `/proc` during the IPC loop (not TFLite).
 Full report: [`results/ipc_benchmark.json`](results/ipc_benchmark.json)
 
 ### Resource ladder (INT8, process RSS)
