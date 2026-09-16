@@ -135,9 +135,9 @@ Jetson Nano / ARM64 Linux
 Compares Unix socket / shared memory / pipe. **No TFLite** — child process only echoes bytes back.
 
 ```text
-┌───────────────────┐         socket/shm/pipe           ┌───────────────────┐
+┌───────────────────┐      socket/shm                   ┌───────────────────┐
 │  Parent（client)  │  ─── send 784 bytes ───────────►  │ Child（server）    │
-│                   │  ◄──  echo baack ───────────      │  only read/write  │
+│                   │  ◄──  echo back ───────────────   │  only read/write  │
 │  measure RTT、CPU │                                   │  no inference      │
 └───────────────────┘                                   └───────────────────┘
 ```
