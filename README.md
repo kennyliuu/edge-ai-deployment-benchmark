@@ -12,6 +12,8 @@ This repo supports:
 Upgrade plan: [`docs/SYSTEM_PERF_STABILITY_PLAN.md`](docs/SYSTEM_PERF_STABILITY_PLAN.md)  
 Profiling / intentional bugs: [`docs/PROFILING.md`](docs/PROFILING.md)
 
+**Upgrade in progress:** extending from pure AI deployment metrics toward **IPC, CPU/memory profiling, long-running stability, and perf-driven debugging** — see [`docs/SYSTEM_PERF_STABILITY_PLAN.md`](docs/SYSTEM_PERF_STABILITY_PLAN.md).
+
 ## Test Platform (Jetson Nano 2GB)
 
 | Component | Specification |
