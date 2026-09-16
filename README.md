@@ -76,8 +76,17 @@ Full report: [`results/resource_ladder.json`](results/resource_ladder.json)
 
 ### Sensor → inference service (Unix socket + TFLite INT8)
 
-End-to-end RTT ≈ **1.28 ms** avg (p95 1.38 ms) @ ~779 fps for 100 frames.
-[`results/inference_service.json`](results/inference_service.json)
+| Metric | Value |
+|---|---|
+| E2E RTT (avg) | **1.283 ms** |
+| E2E RTT (P95) | 1.375 ms |
+| E2E RTT (max) | 1.587 ms |
+| Throughput | 779.4 fps |
+| IPC | Unix Socket |
+| Model | `mnist_int8.tflite` |
+| Frames | 100 |
+
+Full report: [`results/inference_service.json`](results/inference_service.json)
 
 ```bash
 # IPC: Unix socket vs shared memory vs pipe
