@@ -89,11 +89,11 @@ Full report: [`results/resource_ladder.json`](results/resource_ladder.json)
 
 **Why E2E > invoke:** E2E measures client send → server TFLite → JSON reply; single-process INT8 `invoke` is only the model step.
 
-| Scope | What it measures | Time |
-|---|---|---|
-| IPC only (Unix socket) | Echo RTT, no AI | 0.076 ms |
-| INT8 invoke only | Single-process `interpreter.invoke()` | **0.69 ms** |
-| E2E (Sensor → Service) | IPC + invoke + reply | **1.283 ms** |
+| Scope | What it measures | Kind | Time |
+|---|---|---|---|
+| IPC only (Unix socket) | Echo round-trip, no AI | RTT | 0.076 ms |
+| INT8 invoke only | Single-process `interpreter.invoke()` | Latency | **0.69 ms** |
+| E2E (Sensor → Service) | IPC + invoke + reply | RTT | **1.283 ms** |
 
 Full report: [`results/inference_service.json`](results/inference_service.json) · invoke baseline: [`results/jetson_nano_2gb.json`](results/jetson_nano_2gb.json)
 
